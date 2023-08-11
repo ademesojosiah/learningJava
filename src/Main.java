@@ -17,6 +17,10 @@
 //}
 
 
+import java.sql.SQLOutput;
+import java.time.LocalDate;
+import java.util.Scanner;
+
 public class Main{
     public static void main(String [] args){
 //    byte number = 100;
@@ -88,7 +92,7 @@ public class Main{
 
 
 
-        String [] names = {"Anna", "Ali", "Bob", "Mike"};
+//        String [] names = {"Anna", "Ali", "Bob", "Mike"};
 
 //        for(String name : names){
 //            if(name.equals("Bob")){
@@ -107,21 +111,32 @@ public class Main{
 //            System.out.println(name);
 //        }
 
-        int count = 100;
+//        int count = 100;
+//
+//        while(count <= 20){
+//            System.out.println("count" + count);
+//            count++;
+//        }
+//
+//        do{
+//            System.out.println("count" + count);
+//            count++;
+//        }while (count <= 20);
 
-        while(count <= 20){
-            System.out.println("count" + count);
-            count++;
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("what is your name?");
+        String userName = scanner.nextLine();
+        System.out.println("Hello " + userName);
+        System.out.println("How old are you?");
+        int age = scanner.nextInt();
+        int year = LocalDate.now().minusYears(age).getYear();
+        System.out.println("you were born in " + year);
 
-        do{
-            System.out.println("count" + count);
-            count++;
-        }while (count <= 20);
-
-
-
-
+    if(age< 18){
+        System.out.println("you are not an Adult :(");
+    }else{
+        System.out.println("you are an Adult :)");
+    }
 
 
         }
