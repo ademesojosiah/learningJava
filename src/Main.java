@@ -67,11 +67,21 @@ public class Main{
 //            this.name = name;
 //        }
 //    }
-        System.out.println(Math.abs(-10));
-        System.out.println(Math.max(3.6,10.11));
-        System.out.println(Math.min(6,10));
-        System.out.println((int) Math.pow(5,2));
-        System.out.println((int) Math.sqrt(25));
+//        System.out.println(Math.abs(-10));
+//        System.out.println(Math.max(3.6,10.11));
+//        System.out.println(Math.min(6,10));
+//        System.out.println((int) Math.pow(5,2));
+//        System.out.println((int) Math.sqrt(25));
+//            boolean isAdult = true;
+//            boolean isStudent = true;
+//
+//        System.out.println(isAdult || isStudent);
+
+        int age = 17;
+        String message = age >= 18 ? "hooray... I am an adult" :" I am not an Adult";
+        System.out.println(message);
+
+
 
         }
 }
