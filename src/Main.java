@@ -16,29 +16,55 @@
 //    }
 //}
 
+import java.time.LocalDate;
+
 public class Main{
     public static void main(String [] args){
-    byte number = 100;
-    short  theShort = 31_000;
-    int theInt = 1_000_000;
-    long theLong = 2_000_000_000_000L;
+//    byte number = 100;
+//    short  theShort = 31_000;
+//    int theInt = 1_000_000;
+//    long theLong = 2_000_000_000_000L;
+//
+//    float pi = 3.14f;
+//    double doublePi = 3.142;
+//
+//    boolean isAdult = true;
+//    char nameInitial = 'A';
+//
+//        System.out.println(number);
+//        System.out.println(theShort);
+//        System.out.println(theInt);
+//        System.out.println(theLong);
+//        System.out.println(pi);
+//        System.out.println(doublePi);
+//        System.out.println(isAdult);
+//        System.out.println(nameInitial);
 
-    float pi = 3.14f;
-    double doublePi = 3.142;
+        String name = new String("josiah");
 
-    boolean isAdult = true;
-    char nameInitial = 'A';
+        System.out.println(name.toUpperCase());
 
-        System.out.println(number);
-        System.out.println(theShort);
-        System.out.println(theInt);
-        System.out.println(theLong);
-        System.out.println(pi);
-        System.out.println(doublePi);
-        System.out.println(isAdult);
-        System.out.println(nameInitial);
+        LocalDate now = LocalDate.now();
 
+        System.out.println(now);
+        System.out.println(now.getMonth());
 
+        Person alex = new Person("alex");
+        Person mariam = alex;
 
+        System.out.println(alex.name + "---" + mariam.name);
+
+        mariam.name = "marry";
+        System.out.println("after changing name");
+
+        System.out.println(alex.name + "---" + mariam.name);
+
+    }
+
+    static class Person{
+        String name ;
+        Person( String name){
+            this.name = name;
+        }
     }
 }
