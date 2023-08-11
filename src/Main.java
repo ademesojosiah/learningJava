@@ -18,6 +18,27 @@
 
 public class Main{
     public static void main(String [] args){
-        System.out.println("hooray my first java app");
+    byte number = 100;
+    short  theShort = 31_000;
+    int theInt = 1_000_000;
+    long theLong = 2_000_000_000_000L;
+
+    float pi = 3.14f;
+    double doublePi = 3.142;
+
+    boolean isAdult = true;
+    char nameInitial = 'A';
+
+        System.out.println(number);
+        System.out.println(theShort);
+        System.out.println(theInt);
+        System.out.println(theLong);
+        System.out.println(pi);
+        System.out.println(doublePi);
+        System.out.println(isAdult);
+        System.out.println(nameInitial);
+
+
+
     }
 }
