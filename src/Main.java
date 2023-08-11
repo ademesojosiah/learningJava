@@ -16,8 +16,6 @@
 //    }
 //}
 
-import java.time.LocalDate;
-import java.util.Locale;
 
 public class Main{
     public static void main(String [] args){
@@ -79,12 +77,34 @@ public class Main{
 //        int age = 17;
 //        String message = age >= 18 ? "hooray... I am an adult" :" I am not an Adult";
 //        System.out.println(message);
-        String message = "female";
 
-        switch (message.toUpperCase()) {
-            case "FEMALE" -> System.out.println("I am a female");
-            case "MALE" -> System.out.println("I am a male");
-            default -> System.out.println("i prefer not  to speak");
+//        switch (message.toUpperCase()) {
+//            case "FEMALE" -> System.out.println("I am a female");
+//            case "MALE" -> System.out.println("I am a male");
+//            default -> System.out.println("i prefer not  to speak");
+//        }
+
+
+
+
+
+        String [] names = {"Anna", "Ali", "Bob", "Mike"};
+
+        for(String name : names){
+            if(name.equals("Bob")){
+                break;
+            }
+            System.out.println(name);
+        }
+
+
+
+
+        for(String name : names){
+            if(name.startsWith("A")){
+                continue;
+            }
+            System.out.println(name);
         }
 
 
