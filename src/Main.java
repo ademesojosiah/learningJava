@@ -90,22 +90,36 @@ public class Main{
 
         String [] names = {"Anna", "Ali", "Bob", "Mike"};
 
-        for(String name : names){
-            if(name.equals("Bob")){
-                break;
-            }
-            System.out.println(name);
+//        for(String name : names){
+//            if(name.equals("Bob")){
+//                break;
+//            }
+//            System.out.println(name);
+//        }
+//
+//
+//
+//
+//        for(String name : names){
+//            if(name.startsWith("A")){
+//                continue;
+//            }
+//            System.out.println(name);
+//        }
+
+        int count = 100;
+
+        while(count <= 20){
+            System.out.println("count" + count);
+            count++;
         }
 
+        do{
+            System.out.println("count" + count);
+            count++;
+        }while (count <= 20);
 
 
-
-        for(String name : names){
-            if(name.startsWith("A")){
-                continue;
-            }
-            System.out.println(name);
-        }
 
 
 
