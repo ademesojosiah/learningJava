@@ -39,32 +39,39 @@ public class Main{
 //        System.out.println(doublePi);
 //        System.out.println(isAdult);
 //        System.out.println(nameInitial);
+//
+//        String name = "josiah";
+//
+//        System.out.println(name.toUpperCase());
+//
+//        LocalDate now = LocalDate.now();
+//
+//        System.out.println(now);
+//        System.out.println(now.getMonth());
+//
+//        Person alex = new Person("alex");
+//        Person mariam = alex;
+//
+//        System.out.println(alex.name + "---" + mariam.name);
+//
+//        mariam.name = "marry";
+//        System.out.println("after changing name");
+//
+//        System.out.println(alex.name + "---" + mariam.name);
+//
+//    }
+//
+//    static class Person{
+//        String name ;
+//        Person( String name){
+//            this.name = name;
+//        }
+//    }
+        System.out.println(Math.abs(-10));
+        System.out.println(Math.max(3.6,10.11));
+        System.out.println(Math.min(6,10));
+        System.out.println((int) Math.pow(5,2));
+        System.out.println((int) Math.sqrt(25));
 
-        String name = new String("josiah");
-
-        System.out.println(name.toUpperCase());
-
-        LocalDate now = LocalDate.now();
-
-        System.out.println(now);
-        System.out.println(now.getMonth());
-
-        Person alex = new Person("alex");
-        Person mariam = alex;
-
-        System.out.println(alex.name + "---" + mariam.name);
-
-        mariam.name = "marry";
-        System.out.println("after changing name");
-
-        System.out.println(alex.name + "---" + mariam.name);
-
-    }
-
-    static class Person{
-        String name ;
-        Person( String name){
-            this.name = name;
         }
-    }
 }
