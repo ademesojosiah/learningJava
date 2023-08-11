@@ -17,6 +17,7 @@
 //}
 
 import java.time.LocalDate;
+import java.util.Locale;
 
 public class Main{
     public static void main(String [] args){
@@ -72,14 +73,20 @@ public class Main{
 //        System.out.println(Math.min(6,10));
 //        System.out.println((int) Math.pow(5,2));
 //        System.out.println((int) Math.sqrt(25));
-//            boolean isAdult = true;
-//            boolean isStudent = true;
 //
 //        System.out.println(isAdult || isStudent);
 
-        int age = 17;
-        String message = age >= 18 ? "hooray... I am an adult" :" I am not an Adult";
-        System.out.println(message);
+//        int age = 17;
+//        String message = age >= 18 ? "hooray... I am an adult" :" I am not an Adult";
+//        System.out.println(message);
+        String message = "female";
+
+        switch (message.toUpperCase()) {
+            case "FEMALE" -> System.out.println("I am a female");
+            case "MALE" -> System.out.println("I am a male");
+            default -> System.out.println("i prefer not  to speak");
+        }
+
 
 
 
